@@ -14,7 +14,7 @@ public class UserDTO {
     private String email;
     private int comments;
 
-    public UserDTO from(User user) {
+    public static UserDTO from(User user) {
         return builder().id(getId())
                 .email(getEmail())
                 .image(getImage())

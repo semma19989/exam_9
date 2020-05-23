@@ -17,22 +17,22 @@
         </div>
         <div>
             <label class="flex flex-v-center">
-                <p class="label-input-text">Адрес почты:</p>
+                <p class="label-input-text">Email address:</p>
                 <input type="text" name="email" placeholder="ваш адрес почты"  value="${(dto.email)!''}" >
             </label>
         </div>
         <div>
             <label class="flex flex-v-center">
-                <p class="label-input-text">Пароль:</p>
+                <p class="label-input-text">Password:</p>
                 <input type="text" name="password" placeholder="пароль"  value="">
             </label>
         </div>
         <div>
-            <button type="submit">Регистрация</button>
+            <button type="submit">Registration</button>
         </div>
         <div>
             <#if errors?? >
-                <p>Входные данные с ошибками!</p>
+                <p>Вinput data with errors!</p>
                 <#list errors as fieldError>
                     <p>${fieldError.field} - ${fieldError.defaultMessage!'-- no message --'}</p>
                 </#list>
@@ -41,6 +41,6 @@
     </form>
     </div>
     <div class="bottom-box">
-        <a href="/">На главную страницу</a>
+        <a href="/">On the homepage</a>
     </div>
 </@main.renderWith>

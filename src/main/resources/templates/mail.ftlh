@@ -20,7 +20,7 @@
         </div>
         <div>
             <#if errors?? >
-                <p>Входные данные с ошибками!</p>
+                <p>Input data with errors!</p>
                 <#list errors as fieldError>
                     <p>${fieldError.field} - ${fieldError.defaultMessage!'-- no message --'}</p>
                 </#list>

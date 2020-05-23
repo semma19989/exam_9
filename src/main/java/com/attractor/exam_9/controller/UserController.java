@@ -3,6 +3,7 @@ package com.attractor.exam_9.controller;
 
 import com.attractor.exam_9.exception.PaswordNotFoundException;
 import com.attractor.exam_9.model.Pasword;
+import com.attractor.exam_9.model.User;
 import com.attractor.exam_9.model.UserRegistor;
 import com.attractor.exam_9.repository.PaswordRepository;
 import com.attractor.exam_9.repository.UserRepository;
@@ -28,6 +29,7 @@ public class UserController {
     private final UserService userService;
     private final UserRepository repository;
     private final PaswordRepository paswordRepository;
+    private com.attractor.exam_9.model.User User;
 
     @GetMapping("/profile")
     public String pageAuthorProfile(Model model, Principal principal)

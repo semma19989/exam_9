@@ -2,12 +2,12 @@
 
 <@main.renderWith>
     <#if dto??>
-        <h1>Ваши учетные данные!</h1>
+        <h1>Your credentials!</h1>
         <p>${(dto.fullname)!'-- missing --'} - ${(dto.email)!'-- email missing --'}</p>
     <#else>
-        <h1>Пользователь не найден!</h1>
+        <h1>The user is not found!</h1>
     </#if>
     <div class="bottom-box">
-        <a href="/">На главную страницу</a>
+        <a href="/">On the homepage</a>
     </div>
 </@main.renderWith>

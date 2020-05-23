@@ -1,7 +1,5 @@
-<#-- импортируем основной шаблон-контейнер который содержит в себе разметку для основной структуры страницы -->
-<#import "partials/main.ftlh" as main />
 
-<#-- обрабатываем его, и передаём ему список скриптов, которые необходимо подключить-->
+<#import "partials/main.ftlh" as main />
 <@main.renderWith>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,16 +32,16 @@
             .main {
                 padding: 16px;
                 margin-top: 30px;
-                height: 1500px; /* Used in this example to enable scrolling */
+                height: 1500px;
             }
         </style>
     </head>
     <body>
 
 <div class="navbar">
-    <a href="/register"> Регистрация </a>
-    <a href="/login"> Войти </a>
-    <a href="/profile"> Профиль </a>
+    <a href="/register"> Registration </a>
+    <a href="/login"> Enter </a>
+    <a href="/profile"> Profile </a>
     <form class="flex box-128" action="/logout" method="post">
         <#if _csrf??>
             <input type="hidden" name="${(_csrf.parameterName)!'csrf'}" value="${(_csrf.token)!'--no-token--'}"/>

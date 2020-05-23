@@ -27,11 +27,11 @@
             </label>
         </div>
         <div>
-            <button type="submit">Отправить</button>
+            <button type="submit">Send</button>
         </div>
     </form>
     </div>
     <div class="bottom-box">
-        <a href="/">На главную страницу</a>
+        <a href="/">On the homepage</a>
     </div>
 </@main.renderWith>

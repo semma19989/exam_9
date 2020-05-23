@@ -6,7 +6,7 @@
 
         <div>
             <#if error!false >
-                <p style="color:#ff0000">Неверные имя пользователя или пароль !</p>
+                <p style="color:red">Invalid username or password !</p>
             </#if>
         </div>
 
@@ -27,13 +27,13 @@
             </label>
         </div>
         <div>
-            <button type="submit">Войти!</button>
+            <button type="submit"></a>Войти!</button>
         </div>
     </form>
     <div class="bottom-box">
-        <a href="/">На главную страницу</a>
+        <a href="/">On the homepage</a>
     </div>
     <div class="bottom-box">
-        <a class="flex box-128" href="/forgot-password"> Забыли Пароль </a>
+        <a class="flex box-128" href="/forgot-password"> forget your password </a>
     </div>
 </@main.renderWith>
